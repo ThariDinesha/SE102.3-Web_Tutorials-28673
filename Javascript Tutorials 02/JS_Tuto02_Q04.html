@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Remove Item from Dropdown</title>
+</head>
+<body>
+	<select id="mySelect">
+		<option value="1">Sri Lanka</option>
+		<option value="2">South Korea</option>
+		<option value="3">Arab</option>
+		<option value="4">India</option>
+		<option value="5">USA</option>
+		<option value="6">UK</option>
+	</select>
+
+	<button onclick="removeItem()">Remove Item</button>
+
+	<script>
+		function removeItem() {
+			// Get a reference to the dropdown
+			var select = document.getElementById('mySelect');
+
+	// Remove the item at index 1. Change this to whichever item you want to remove.
+			select.remove(1);
+		}
+	</script>
+</body>
+</html>

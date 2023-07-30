@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>Javascript Question</title>
+</head>
+<body>
+   <script>
+		window.onload=function()
+		{
+			getMarks();
+		}
+		function getMarks(){ // corrected here
+			var total=0;
+			for(var i=0; i<5; i++){
+				var marks=parseInt(window.prompt("Enter Marks"))
+				total+=marks;
+		}
+		document.write("Total:",total);
+		document.write("<br>");
+		var average = total/5;
+		document.write("Average",average);
+		document.write("<br>");
+
+		var button=document.createElement("button");
+		button.innerHTML="button";
+		button.onclick=function(){
+			if(average>30){
+				window.alert("Congrats!");
+		}
+		else{
+			window.alert("Enter luck Next time");
+		}
+	};
+	document.body.appendChild(button);
+	}
+   </script>
+</body>
+</html>

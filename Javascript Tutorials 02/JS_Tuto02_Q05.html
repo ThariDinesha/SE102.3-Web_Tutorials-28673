@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Change Table Border with JavaScript</title>
+    </head>
+    <body>
+        <table id="myTable" style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Dilakshi</td>
+                <td>Vilanya</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Emasha</td>
+                <td>SavindiJackson</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Nilanthi</td>
+                <td>Dias</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <button onclick="changeBorder()">Change Table Border</button>
+
+        <script>
+            function changeBorder() {
+                var table = document.getElementById("myTable");
+                table.style.border = "2px solid red";
+            }
+        </script>
+    </body>
+</html>
